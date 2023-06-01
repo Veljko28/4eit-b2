@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+    <center>
+  <h1 style="color:aliceblue">Домаће животиње - Почетна страница</h1>
+  </center>
+ 
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li><a href="index.html">Почетна</a></li>
+      <li><a href="about.html">О аутору</a></li>
+      <li><a href="uputstvo.html">Инструкције</a></li>
+    </ul>
+  </nav>
+  <div class="animal-images">
+
+    <audio src="Zvukovi/dog.mp3" id="ker"> </audio>
+    <audio src="Zvukovi/krava.mp3" id="mumu"> </audio>
+    <audio src="Zvukovi/macka.mp3" id="mjau"> </audio>
+    <audio src="Zvukovi/patka.mp3" id="bee"> </audio>
+    <audio src="Zvukovi/pile.mp3" id="piju"> </audio>
+
+
+    <a href="#" onmouseover="Kreni('ker')" onmouseout="Prekini('ker')" onclick="showDescription('Куче', 'Неки опис за куче.')">
+      <img src="Slike/dog.jpg" alt="Животиња 1">
+    </a>
+
+    <a href="#" onmouseover="Kreni('mumu')" onmouseout="Prekini('mumu')" onclick="showDescription('Крава', 'Неки опис за краву.')">
+      <img src="Slike/krava.jpg" alt="Животиња 2">
+    </a>
+    <a href="#" onmouseover="Kreni('mjau')" onmouseout="Prekini('mjau')" onclick="showDescription('Мачка', 'Неки опис за мачку.')">
+      <img src="Slike/macka.jpg" alt="Животиња 3">
+    </a>
+    <a href="#" onmouseover="Kreni('bee')" onmouseout="Prekini('bee')" onclick="showDescription('Патка', 'Неки опис за патку.')">
+      <img src="Slike/patka.jpg" alt="Животиња 4">
+    </a>
+    <a href="#" onmouseover="Kreni('piju')" onmouseout="Prekini('piju')" onclick="showDescription('Пиле', 'Неки опис за пиле.')">
+      <img src="Slike/pile.jpg" alt="Животиња 5">
+    </a>
+  </div>
+  <div id="description-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeDescriptionModal()">&times;</span>
+      <h2 id="animal-title"></h2>
+      <p id="animal-description"></p>
+    </div>
+  </div>
+
+  <footer id="footer">
+    <p>Copyright @ Tehnicka Skola Smederevo</p>
+  </footer>
+</body>
+</html>
